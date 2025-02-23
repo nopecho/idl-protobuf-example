@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.nopecho.protobuf.example'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    protobufVersion = '4.29.3'
+}
+
+dependencies {
+    implementation "com.google.protobuf:protobuf-java:$protobufVersion"
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+sourceSets {
+    main {
+        java.srcDirs += "generated/java"
+    }
+}
