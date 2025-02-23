@@ -3,6 +3,7 @@ version: v2
 lint:
   use:
     - STANDARD
+  enum_zero_value_suffix: _UNKNOWN
 breaking:
   use:
     - FILE
