@@ -14,7 +14,10 @@ format:
 	$(BUF_CMD) format
 
 init:
-	$(BUF_CMD) config init
+	@test -f buf.yaml || ( \
+    	$(BUF_CMD) config init && \
+    	echo "version: v2\nclean: true\nmanaged:\n  enabled: true" > buf.gen.yaml \
+    )
 
 help:
 	$(BUF_CMD) help
