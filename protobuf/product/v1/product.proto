@@ -1,0 +1,25 @@
+syntax = 'proto3';
+
+package protobuf.product.v1;
+
+import "google/protobuf/timestamp.proto";
+
+enum ProductType {
+  PRODUCT_TYPE_UNKNOWN = 0;
+  PRODUCT_TYPE_NORMAL = 1;
+  PRODUCT_TYPE_SPECIAL = 2;
+}
+
+message Product {
+  string id = 1;
+  ProductType type = 2;
+  string name = 3;
+  uint32 quantity = 4;
+  ProductPrice price = 5;
+  google.protobuf.Timestamp created_at = 6;
+}
+
+message ProductPrice {
+  uint32 sale_price = 1;
+  uint32 origin_price = 2;
+}

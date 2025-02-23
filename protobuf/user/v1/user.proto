@@ -1,0 +1,19 @@
+syntax = 'proto3';
+
+package protobuf.user.v1;
+
+import "google/protobuf/timestamp.proto";
+
+enum UserGrade {
+  USER_GRADE_UNKNOWN = 0;
+  USER_GRADE_BRONZE = 1;
+  USER_GRADE_SILVER = 2;
+  USER_GRADE_GOLD = 3;
+}
+
+message User {
+  string id = 1;
+  string name = 2;
+  UserGrade grade = 3;
+  google.protobuf.Timestamp created_at = 4;
+}

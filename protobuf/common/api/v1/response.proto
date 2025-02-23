@@ -1,0 +1,21 @@
+syntax = 'proto3';
+
+package protobuf.common.api.v1;
+
+import 'google/protobuf/any.proto';
+
+message ApiResponse {
+  optional ApiMetadata metadata = 2;
+  google.protobuf.Any data = 3;
+}
+
+message ApiMetadata {
+  uint32 size = 1;
+  optional string last_cursor = 2;
+  bool has_more = 3;
+}
+
+message ErrorResponse {
+  uint32 code = 1;
+  optional string message = 2;
+}
