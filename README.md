@@ -49,3 +49,10 @@ message Foo {
 ```shell
 make gen
 ```
+
+## Example Code
+
+- [example-java](./example/example-java/README.md)
+- [example-kotlin](./example/example-kotlin/README.md)
+- [example-react](./example/example-react/README.md)
+- [example-node](./example/example-node/README.md)
