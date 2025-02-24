@@ -17,3 +17,15 @@ message User {
   UserGrade grade = 3;
   google.protobuf.Timestamp created_at = 4;
 }
+
+message UserListResponse {
+  repeated User data = 1;
+}
+
+message UserResponse {
+  User data = 1;
+}
+
+message CreateUserRequest {
+  string name = 1;
+}

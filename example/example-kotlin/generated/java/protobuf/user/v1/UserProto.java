@@ -30,6 +30,21 @@ public final class UserProto {
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_protobuf_user_v1_User_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_protobuf_user_v1_UserListResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_protobuf_user_v1_UserListResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_protobuf_user_v1_UserResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_protobuf_user_v1_UserResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_protobuf_user_v1_CreateUserRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_protobuf_user_v1_CreateUserRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -44,13 +59,17 @@ public final class UserProto {
       "\"\230\001\n\004User\022\016\n\002id\030\001 \001(\tR\002id\022\022\n\004name\030\002 \001(\tR" +
       "\004name\0221\n\005grade\030\003 \001(\0162\033.protobuf.user.v1." +
       "UserGradeR\005grade\0229\n\ncreated_at\030\004 \001(\0132\032.g" +
-      "oogle.protobuf.TimestampR\tcreatedAt*f\n\tU" +
-      "serGrade\022\026\n\022USER_GRADE_UNKNOWN\020\000\022\025\n\021USER" +
-      "_GRADE_BRONZE\020\001\022\025\n\021USER_GRADE_SILVER\020\002\022\023" +
-      "\n\017USER_GRADE_GOLD\020\003BmB\tUserProtoP\001\242\002\003PUX" +
-      "\252\002\020Protobuf.User.V1\312\002\020Protobuf\\User\\V1\342\002" +
-      "\034Protobuf\\User\\V1\\GPBMetadata\352\002\022Protobuf" +
-      "::User::V1b\006proto3"
+      "oogle.protobuf.TimestampR\tcreatedAt\">\n\020U" +
+      "serListResponse\022*\n\004data\030\001 \003(\0132\026.protobuf" +
+      ".user.v1.UserR\004data\":\n\014UserResponse\022*\n\004d" +
+      "ata\030\001 \001(\0132\026.protobuf.user.v1.UserR\004data\"" +
+      "\'\n\021CreateUserRequest\022\022\n\004name\030\001 \001(\tR\004name" +
+      "*f\n\tUserGrade\022\026\n\022USER_GRADE_UNKNOWN\020\000\022\025\n" +
+      "\021USER_GRADE_BRONZE\020\001\022\025\n\021USER_GRADE_SILVE" +
+      "R\020\002\022\023\n\017USER_GRADE_GOLD\020\003BmB\tUserProtoP\001\242" +
+      "\002\003PUX\252\002\020Protobuf.User.V1\312\002\020Protobuf\\User" +
+      "\\V1\342\002\034Protobuf\\User\\V1\\GPBMetadata\352\002\022Pro" +
+      "tobuf::User::V1b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -63,6 +82,24 @@ public final class UserProto {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_protobuf_user_v1_User_descriptor,
         new java.lang.String[] { "Id", "Name", "Grade", "CreatedAt", });
+    internal_static_protobuf_user_v1_UserListResponse_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_protobuf_user_v1_UserListResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_protobuf_user_v1_UserListResponse_descriptor,
+        new java.lang.String[] { "Data", });
+    internal_static_protobuf_user_v1_UserResponse_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_protobuf_user_v1_UserResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_protobuf_user_v1_UserResponse_descriptor,
+        new java.lang.String[] { "Data", });
+    internal_static_protobuf_user_v1_CreateUserRequest_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_protobuf_user_v1_CreateUserRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_protobuf_user_v1_CreateUserRequest_descriptor,
+        new java.lang.String[] { "Name", });
     descriptor.resolveAllFeaturesImmutable();
     com.google.protobuf.TimestampProto.getDescriptor();
   }

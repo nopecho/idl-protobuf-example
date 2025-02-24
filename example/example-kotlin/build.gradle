@@ -1,5 +1,9 @@
 plugins {
+    id "java-library"
     id 'org.jetbrains.kotlin.jvm' version '2.0.0'
+    id "org.jetbrains.kotlin.plugin.spring" version "2.0.0"
+    id "org.springframework.boot" version "3.4.2"
+    id "io.spring.dependency-management" version "1.1.4"
 }
 
 group = 'com.nopecho.protobuf.example'
@@ -15,7 +19,14 @@ ext {
 dependencies {
     implementation "com.google.protobuf:protobuf-java:$protobufVersion"
     implementation "com.google.protobuf:protobuf-kotlin:$protobufVersion"
+    implementation "org.springframework.boot:spring-boot-starter"
+    implementation "org.springframework.boot:spring-boot-starter-web"
+
+
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
 
 test {
