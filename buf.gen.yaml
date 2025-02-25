@@ -15,4 +15,6 @@ plugins:
     out: generated/kotlin
   - remote: buf.build/bufbuild/es
     out: generated/ts
-    opt: target=ts
+    opt:
+      - target=ts
+      - json_types=true
