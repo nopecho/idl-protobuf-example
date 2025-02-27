@@ -29,5 +29,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -am "Generated: ${{ env.CODE_VERSION }}"
-            git push -u origin main
+            git push origin HEAD:main
           fi
