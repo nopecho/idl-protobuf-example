@@ -64,12 +64,13 @@ public final class UserProto {
       ".user.v1.UserR\004data\":\n\014UserResponse\022*\n\004d" +
       "ata\030\001 \001(\0132\026.protobuf.user.v1.UserR\004data\"" +
       "\'\n\021CreateUserRequest\022\022\n\004name\030\001 \001(\tR\004name" +
-      "*f\n\tUserGrade\022\026\n\022USER_GRADE_UNKNOWN\020\000\022\025\n" +
+      "*\177\n\tUserGrade\022\026\n\022USER_GRADE_UNKNOWN\020\000\022\025\n" +
       "\021USER_GRADE_BRONZE\020\001\022\025\n\021USER_GRADE_SILVE" +
-      "R\020\002\022\023\n\017USER_GRADE_GOLD\020\003BmB\tUserProtoP\001\242" +
-      "\002\003PUX\252\002\020Protobuf.User.V1\312\002\020Protobuf\\User" +
-      "\\V1\342\002\034Protobuf\\User\\V1\\GPBMetadata\352\002\022Pro" +
-      "tobuf::User::V1b\006proto3"
+      "R\020\002\022\023\n\017USER_GRADE_GOLD\020\003\022\027\n\023USER_GRADE_P" +
+      "LATINUM\020\004BmB\tUserProtoP\001\242\002\003PUX\252\002\020Protobu" +
+      "f.User.V1\312\002\020Protobuf\\User\\V1\342\002\034Protobuf\\" +
+      "User\\V1\\GPBMetadata\352\002\022Protobuf::User::V1" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

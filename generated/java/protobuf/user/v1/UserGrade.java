@@ -26,6 +26,10 @@ public enum UserGrade
    * <code>USER_GRADE_GOLD = 3;</code>
    */
   USER_GRADE_GOLD(3),
+  /**
+   * <code>USER_GRADE_PLATINUM = 4;</code>
+   */
+  USER_GRADE_PLATINUM(4),
   UNRECOGNIZED(-1),
   ;
 
@@ -54,6 +58,10 @@ public enum UserGrade
    * <code>USER_GRADE_GOLD = 3;</code>
    */
   public static final int USER_GRADE_GOLD_VALUE = 3;
+  /**
+   * <code>USER_GRADE_PLATINUM = 4;</code>
+   */
+  public static final int USER_GRADE_PLATINUM_VALUE = 4;
 
 
   public final int getNumber() {
@@ -84,6 +92,7 @@ public enum UserGrade
       case 1: return USER_GRADE_BRONZE;
       case 2: return USER_GRADE_SILVER;
       case 3: return USER_GRADE_GOLD;
+      case 4: return USER_GRADE_PLATINUM;
       default: return null;
     }
   }
