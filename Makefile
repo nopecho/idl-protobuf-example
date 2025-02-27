@@ -4,7 +4,7 @@ BUF_CMD := docker run --rm \
 --workdir /workspace \
 bufbuild/buf
 
-gen:
+gen: lint
 	$(BUF_CMD) generate --clean
 
 lint:
