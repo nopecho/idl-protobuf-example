@@ -9,6 +9,7 @@ enum UserGrade {
   USER_GRADE_BRONZE = 1;
   USER_GRADE_SILVER = 2;
   USER_GRADE_GOLD = 3;
+  USER_GRADE_PLATINUM = 4;
 }
 
 message User {
