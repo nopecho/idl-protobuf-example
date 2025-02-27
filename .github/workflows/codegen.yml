@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Output tag version
         id: tag-version
@@ -22,9 +22,12 @@ jobs:
       - name: Commit and push changes
         env:
           CODE_VERSION: ${{ steps.tag-version.outputs.version }}
-          CURRENT_TIME: $(date -u +"%Y-%m-%dT%H:%M:%S")
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
-          git commit -am "Generated: ${{ env.CODE_VERSION }} at ${{ env.CURRENT_TIME }}"
-          git push -u origin main
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -am "Generated: ${{ env.CODE_VERSION }}"
+            git push -u origin main
+          fi
