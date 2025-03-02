@@ -14,11 +14,14 @@ repositories {
 
 ext {
     protobufVersion = '4.29.3'
+    jacksonProtobufVersion = '0.9.17'
 }
 
 dependencies {
-    implementation "com.google.protobuf:protobuf-java:$protobufVersion"
     implementation "com.google.protobuf:protobuf-kotlin:$protobufVersion"
+    implementation "com.google.protobuf:protobuf-java:$protobufVersion"
+    implementation "com.google.protobuf:protobuf-java-util:$protobufVersion"
+    implementation "com.hubspot.jackson:jackson-datatype-protobuf:$jacksonProtobufVersion"
     implementation "org.springframework.boot:spring-boot-starter"
     implementation "org.springframework.boot:spring-boot-starter-web"
 
